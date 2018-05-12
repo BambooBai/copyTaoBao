@@ -1,0 +1,29 @@
+@import 'reset';
+
+@header-bg:#F2F2F2;
+@main-bg:#F1F1F1;
+@border-bottom:#EAEAEA;
+@header2:#ff5000;
+@orange:#ff9000;
+@btn-bg: #FC3D08;
+@green: #13d0a1;
+@blue: rgb(53, 177, 255);
+@color1: #3C3C3C;
+@custom1: #272727;
+@custom2: rgb(153, 153, 153);
+
+
+.centerPos(@h,@w) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: unit(-(@h/2), px);
+  margin-top: unit(-(@w/2), px);
+}
+.txt {
+  .centerPos(200, 200);
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
