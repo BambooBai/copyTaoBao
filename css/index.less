@@ -8,8 +8,6 @@ body, html {
   overflow-x: hidden;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
   header {
     background: lightseagreen;
     .header-top {
@@ -31,10 +29,58 @@ body, html {
     background: lightgoldenrodyellow;
   }
   main {
+    width: 1200px;
+    margin: 0 auto;
     .banner-wrap {
       width: 100%;
       height: 632px;
-      background: lightblue;
+      .banner-left {
+        float: left;
+        width: 900px;
+        height: 100%;
+        clear: left;
+        .inner {
+            overflow: hidden;
+          
+          .banner-servise {
+            position: relative;
+            float: left;
+            height: 522px;
+            width: 190px;
+            background: lightgreen;
+            }
+          .banner {
+            margin-left: 10px;
+            margin-top: 10px;
+            float: left;
+            height: 512px;
+            width: 520px;
+            background: lightblue;
+          }
+          .banner-pub {
+            float: right;
+            width: 160px;
+            height: 512px;
+            margin-right: 10px;
+            margin-top: 10px;
+            background: lightgray;
+          }
+        }
+        .headline {
+          position: relative;
+          padding: 14px 14px 12px 20px;
+          height: 73px;
+          margin-top: 10px;
+          background: #333;
+      }
+      }
+      .banner-right {
+        float: right;
+        width: 290px;
+        height: 100%;
+        margin-top: 10px;
+        background: blue;
+      }
     }
     .lifeStyle {
       margin-top: 10px;
