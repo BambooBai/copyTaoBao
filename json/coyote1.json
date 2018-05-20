@@ -1,0 +1,120 @@
+[
+  {"id": 0,"title": "公告","content":[
+    {
+      "hot": true,
+      "line":true,
+      "href":"javascript:",
+      "desc":"国际刑警来阿里取经 务实打假成效全球瞩目"
+    },
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"汶川樱桃搭村淘卖全国"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"阿里人的“扶贫新方式”"
+    }
+  ]},
+  {"id": 1,"title": "规则","content":[
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"关于新增订单查询服务保障规则公示的通知"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"云标签工具，30秒打标恶意行为"
+    },
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"《淘宝网数字娱乐市场须提供官方授权的商品目录》变更公示通知"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"《淘宝网大家电须通过供销平台建立代销模式的指定品牌》变更公示通知"
+    }
+
+  ]},
+  {"id": 2,"title": "论坛","content":[
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"40天小白变设计师"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"中差评功能升级"
+    },
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"陌生人拼团上线"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"2018年新零售趋势"
+    }
+
+  ]},
+  {"id": 3,"title": "安全","content":[
+    {
+      "hot": true,
+      "line":false,
+      "href":"javascript:",
+      "desc":"公益“护苗”行动招募"
+    },{
+      "hot":true,
+      "line":false,
+      "href":"javascript:",
+      "desc":"你愿意加入我们吗？"
+    },
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"卖家注意：风险通报！"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"售假获刑又起诉！"
+    }
+
+  ]},
+  {"id": 4,"title": "公益","content":[
+    {
+      "hot": true,
+      "line":false,
+      "href":"javascript:",
+      "desc":"九寨沟地震紧急救援"
+    },{
+      "hot":true,
+      "line":false,
+      "href":"javascript:",
+      "desc":"公益宝贝卖家准入公告"
+    },
+    {
+      "hot": false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"致百万商家的感谢信"
+    },{
+      "hot":false,
+      "line":false,
+      "href":"javascript:",
+      "desc":"公益宝贝卖家发票索取"
+    }
+  ]}
+]
