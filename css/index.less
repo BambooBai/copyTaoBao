@@ -1,9 +1,9 @@
 @import '_common';
 
 body, html {
-  background: #fff;
+  background: #f4f4f4;
   font-size: 14px;
-  color: #3C3C3C;
+  color: @color1;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -86,21 +86,23 @@ body, html {
       margin-top: 10px;
       height: 166px;
       overflow: hidden;
-      background: lightcoral;
+      background: #fff;
     }
     .common-box {
       margin-top: 10px;
       overflow: hidden;
+      margin-bottom: 10px;
       .common-left {
         &.goods {
-          width: 595px;
+          position: relative;
+          width: 590px;
           float: left;
           height: 658px;
-          background: lightpink;
+          //background: lightpink;
         }
         &.good-shop {
           float: left;
-          width: 595px;
+          width: 590px;
           height: 538px;
           background: lightpink;
         }
@@ -112,7 +114,7 @@ body, html {
           width: 595px;
           margin-left: 10px;
           height: 658px;
-          background: #999;
+          //background: #999;
         }
         &.live {
           float: left;
