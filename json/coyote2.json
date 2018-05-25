@@ -1,18 +1,22 @@
 [
   {"id":0,"name":"充话费","content":[
-    {"name1":"充话费","mailList":"请输入手机号码","icon":"https://img.alicdn.com/tps/i4/T1gcVFFcRcXXbffaj4-200-230.png","price":["100元","10元","200元","20元","300元","30元","500元","50元","1000元"],"curprice":["98-99.5","9.8-9.9","196-199","19.6-20","294-299","29.4-30","490-498","49-49.8","980-990"],"actBtn":"立刻充值"},
-    {"name1":"充流量","mailList":"请输入手机号码","icon":"https://img.alicdn.com/tps/i4/T1gcVFFcRcXXbffaj4-200-230.png","type":[
+    {"name1":"充话费","mailList":"请输入手机号码","price":["100元","10元","200元","20元","300元","30元","500元","50元","1000元"],"curprice":["98-99.5","9.8-9.9","196-199","19.6-20","294-299","29.4-30","490-498","49-49.8","980-990"],"actBtn":"立刻充值"},
+    {"name1":"充流量","mailList":"请输入手机号码","typell":[
       {"typename":"全国流量","amount":["100M","300M","500M","1000M","2000M","3000M","5000M","10000M"],"curprice":["9.5","19","18","30","50","70","100","150"]},{"typename":"本地流量","amount":["100M","300M","500M","1000M","2000M","3000M","5000M","10000M"],"curprice":["7.5","11","15","20","32.2","68.5","66","90"]}
     ],"actBtn":"立刻充值"},
     {"name1":"充固话","radioType":[{"radioName":"电信","val":0},{"radioName":"联通","val":1}],"mailList":"区号 - 号码（不支持小灵通）","icon":"https://img.alicdn.com/tps/i4/T1gcVFFcRcXXbffaj4-200-230.png","price":["100元","10元","200元","20元","300元","30元","500元","50元"],"curprice":["100","10","200","20","300","30","500","50"],"actBtn":"立刻充值"},
     {"name1":"充宽带","sel":"电信","mailList":"请输入手机号码","icon":"https://img.alicdn.com/tps/i4/T1gcVFFcRcXXbffaj4-200-230.png","price":["100元","10元","200元","20元","300元","30元","500元","50元","1000元"],"curprice":["98-99.5","9.8-9.9","196-199","19.6-20","294-299","29.4-30","490-498","49-49.8","980-990"],"actBtn":"立刻充值"}
   ]},
   {"id":1,"name":"旅行","content":[
-    {"name1":"充话费"}
+    {"name1":"国内机票","radioType":[{"radioName":"单程","name":"gn","val":0},{"radioName":"往返","name":"gn","val":1}],"starCity":"出发城市","tarCity":"到达城市","starTime":"出发时间","actBtn":"查找"},
+    {"name1":"国际机票","radioType":[{"radioName":"单程","name":"gj","val":0},{"radioName":"往返","name":"gj","val":1}],"starCity":"出发城市","tarCity":"到达城市","starTime":"出发时间","actBtn":"查找"},
+    {"name1":"酒店客栈","radioType":[{"radioName":"国内/港澳台","name":"jd","val":0},{"radioName":"海外","name":"jd","val":1}],"starCity":"出发城市","tarCity":"到达城市","starTime":"出发时间","actBtn":"查找"},
+    {"name1":"度假门票","radioType":[{"radioName":"度假","name":"dj","val":0},{"radioName":"门票","name":"dj","val":1}],"starCity":"出发城市","tarCity":"到达城市","starTime":"出发时间","actBtn":"查找"},
+    {"name1":"火车票","starCity":"出发城市","tarCity":"到达城市","starTime":"出发时间","actBtn":"查找"}
   ]},
   {"id":2,"name":"车险","content":[
     {"name1":"车险","firsel":{
-      "selName":"热门城市","options":["请选择城市","B北京","C长春","C重庆","D大连"]
+      "selName":"热门城市","options":["北京","长春","重庆","大连"]
     },"secsel":{
       "selName":"保险公司","options":["人保车险","平安车险","阳光车险"]
     },"actBtn":"立刻报价","norBtn":"快速续保","link":"车险活动"},

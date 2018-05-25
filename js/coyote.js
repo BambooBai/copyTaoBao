@@ -1,3 +1,7 @@
+//点击关闭弹框
+let closeFrame = (ele,classStr) => {
+    utils.removeClass(ele.parentNode,classStr);
+};
 let queryData = (url, resdata) => {
     return new Promise((resolve, reject) => {
         let xhr = new XMLHttpRequest();
@@ -116,27 +120,109 @@ let feature = (() => {
     let features = document.querySelector("#features"),
         featit = features.querySelector(".featurestit"),
         feacon = features.querySelector(".featurescon"),
-        titList = featit.getElementsByTagName("li");
+        titList = featit.getElementsByTagName("li"),
+        aClose = null;
+    let typeContit = null,
+        typeContitListTel = null,
+        typeContitListTour = null,
+        typeContitListSav = null;
     let data = [];
     let bindData = (res) => {
         let str = '', constr = ``;
         utils.each(res, (index, {name, content}) => {
             str += `<li class="conveitem"><a href="javascipt:"><span class="tbh-icon" style="background-position:0 ${-44 * index}px"></span><span class="block">${name}</span></a></li>`;
-            if(content.length>0){
-                if(index === 0){
-                    utils.each(content,(ind, item) => {
+            if(content && content.length>0){
+                constr += `<div class="conve"><a href="javascript:" class="close">X</a><div class="convetit">`;
+                let typeTit = ``, typeCon = ``;
+                typeTit = `<div class="typeContit">`;
+                typeCon = `<div class="typeCon clearfix">`;
+                if(index === 0 || index === 2){
+                    utils.each(content,(ind, {name1,mailList,price,curprice,actBtn,typell,firsel,link=''}) => {
+                        typeTit += `<a href="javascript:" class="${ind === 0 ? 'active':''}">${name1}</a>`;
+                        typeCon += `<div class="inpcon ${ind === 0 ? 'active':''}">
+                             <p><input type="text" class="normalinp" placeholder="${mailList||firsel.options[0]}"><a href="javascript:;" class="normalico"></a></p>
+                             <p>`;
+                        if(typeof typell !== 'undefined'){
+                            /*let typecat = ``;
+                            typeCon += ``;
+                            utils.each(type,(typeind, {typename,amount}) => {
+                                typecat += `<span>${typename}</span>`
+                            });*/
 
+                            typeCon += `<input type="text" placeholder="${typell[0].typename}" class="smallinp"><a href="javascript:;"></a>`;
+                            typeCon += `<input type="text" placeholder="${typell[0].amount[4]}" class="smallinp"><a href="javascript:;"></a>`;
+                        }else{
+                            typeCon += `<input class="normalinp" type="text"><a class="price" href="#price" ></a><span class="tarprice" id="price">`;
+                            // utils.each(price,(index, item) => {
+                            //     typeCon += `<span data-index="${index}">${item}</span>`;
+                            // });
+                        }
+
+                        typeCon += `</span></p><p>售价： ￥ <span class="redact">49</span></p>
+<p class="btnP"><input type="button" class="btnorg actBtn" value="${actBtn}"><a href="">${link}</a></p>
+</div>`;
+                    });
+                }else{
+                    utils.each(content,(ind,{name1,radioType=[],starCity,tarCity,starTime,actBtn}) => {
+                        typeTit += `<a href="javascript:" class="${ind === 0 ? 'active':''}">${name1}</a>`;
+                        typeCon += `<div class="inpcon ${ind === 0 ? 'active':''}">`;
+                        if(radioType.length){
+                            typeCon += `<p class="clearfix tour">`;
+                            utils.each(radioType,(radind,{radioName,name,val}) => {
+                                typeCon += `<label for="${name}" class="radlabel"><input type="radio" name="${name}" value="${val}">${radioName}</label>`;
+                            });
+                            typeCon += `</p>`;
+                        }
+                        typeCon += `<p class="tour clearfix"><input class="tourInp" type="text" placeholder="${starCity}"><span> --&gt; </span><input class="tourInp" type="text" placeholder="${tarCity}"></p>`;
+                        typeCon += `<p class="tour clearfix"><input class="tourInp" type="text" placeholder="${starTime}"></p>`;
+                        typeCon += `<p class="btnP"><input type="button" class="btnorg actBtn" value="${actBtn}"></p>
+</div>`;
                     });
                 }
+                typeCon += '</div>';
+                typeTit += `</div>`;
+                constr += typeTit + typeCon;
+                constr += `</div></div>`;
             }
         });
         featit.innerHTML = str;
+        feacon.innerHTML = constr;
 
     };
     return {
         init: function () {
             let promise = queryData('./json/coyote2.json');
-            promise.then(bindData);
+            promise.then(bindData).then(() => {
+                tabs({
+                    curEleAry: titList
+                });
+            }).then(() => {
+                aClose = features.querySelectorAll(".close");
+                utils.each(aClose, (index, item) => {
+                    item.addEventListener('click',closeFrame.bind(null,item, 'active'));
+                });
+                typeContit = features.querySelectorAll(".typeContit");
+                typeContitListTel = typeContit[0].querySelectorAll("a");
+                typeContitListSav = typeContit[2].querySelectorAll("a");
+                typeContitListTour = typeContit[1].querySelectorAll("a");
+                tabs({
+                    curEleAry: typeContitListTel
+                });
+                tabs({
+                    curEleAry: typeContitListSav
+                });
+                tabs({
+                    curEleAry: typeContitListTour
+                });
+
+                /*utils.each(titList, (index, item) => {
+                    item.addEventListener("mouseleave", () => {
+                        utils.each(feacon.children, (index, item) => {
+                            utils.removeClass(item, 'active');
+                        });
+                    })
+                });*/
+            });
         }
     }
 })();
