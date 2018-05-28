@@ -24,7 +24,10 @@ body, html {
     height: 30px;
     line-height: 30px;
     color: #fff;
-    background: lightgoldenrodyellow;
+    background-image: -webkit-linear-gradient(left,#ff9000 0,#ff5000 100%);
+    background-image: -o-linear-gradient(left,#ff9000 0,#ff5000 100%);
+    background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    background-repeat: repeat-x;
   }
   main {
     width: 1200px;
@@ -69,7 +72,7 @@ body, html {
           padding: 14px 14px 12px 20px;
           height: 73px;
           margin-top: 10px;
-          background: #333;
+          background: #fff;
       }
       }
       .banner-right {
@@ -128,7 +131,7 @@ body, html {
       width: 100%;
       height: 264px;
       overflow: hidden;
-      background: lightsteelblue;
+      background: #fff;
     }
     .ad-banner {
       margin-top: 10px;
@@ -165,3 +168,4 @@ body, html {
 @import 'wanggang';
 @import 'coyote';
 @import "dabai.css";
+@import "other";
