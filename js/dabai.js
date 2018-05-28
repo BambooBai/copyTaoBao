@@ -24,6 +24,7 @@ let dabaiFn=function () {
 
         data.forEach((item,index)=>{
             let {name,nameClass}=item;
+
             strLi+=`  <li class="clearfix">${name}</li>`;
             strContent += ` <div class="divR_item clearfix"><div class="divR_smillClass">`;
             let strWhatlike=`<div class="whatLikeBox"><p>猜你喜欢</p><div class="whatLike clearfix">`;
