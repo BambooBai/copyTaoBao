@@ -37,17 +37,23 @@ body {
   display: block
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
-  .tjb-icon, .club-icon {
-    height: 17px;
-    width: 20px;
-    float: left;
-  }
+.tjb-icon, .club-icon {
+  height: 17px;
+  width: 20px;
+  float: left;
+}
 
-  .tbh-icon {
-    background: url(https://img.alicdn.com/tfs/TB1tyFSXm_I8KJjy0FoXXaFnVXa-48-1194.png) 0 0 no-repeat;
-    background-size: 24px 597px;
-  }
+.tbh-icon {
+  background: url(https://img.alicdn.com/tfs/TB1tyFSXm_I8KJjy0FoXXaFnVXa-48-1194.png) 0 0 no-repeat;
+  background-size: 24px 597px;
+}
+
+.tbh-icon {
+  background: url(https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png) 0 0 no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), not all, not all, not all {
+
 }
 
 .container main .banner-wrap .banner-right {
@@ -228,11 +234,116 @@ body {
             display: inline-block;
           }
         }
+        &.active a{
+          color: @header2;
+        }
       }
     }
-    .conve {
-      display: none;
-      position: absolute
+    .featurescon {
+      position: absolute;
+      width: 100%;
+      top: 70px;
+      left: 0;
+      .conve {
+        display: none;
+        position: relative;
+        height: 140px;
+        width: 100%;
+        background: #fff;
+        box-sizing: border-box;
+        padding: 0 15px;
+        //border:1px solid #f00;
+        box-shadow: 0 0 2px 2px rgba(100, 50, 50, 0.3);
+        overflow: hidden;
+        &.active {
+          display: block;
+        }
+        .close {
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          right: 1px;
+          top: 1px;
+          color: #999;
+          font-size: 16px;
+        }
+        .typeContit {
+          display: -webkit-flex;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-around;
+          white-space: nowrap;
+          a {
+            color: #666;
+            height: 26px;
+            line-height: 26px;
+
+            &:hover, &.active{
+              color: @header2;
+            }
+
+          }
+        }
+        .typeCon {
+          width:600%;
+          animation: .2s;
+          .inpcon {
+            position: relative;
+            padding-top: 6px;
+            float:left;
+            width:290px;
+            display: none;
+            p {
+              position: relative;
+              .normalinp,.smallinp,.tourInp {
+                border: 1px solid #dedede;
+                height: 20px;
+                line-height: 20px;
+                width: 200px;
+                padding: 0 5px;
+              }
+              .smallinp{
+                width:94px;
+              }
+              .normalico {
+                position: absolute;
+                left: 200px;
+              }
+              .redact {
+                font-weight: bold;
+                color:@header2;
+              }
+              .actBtn{
+                padding:0 10px;
+                border:0;
+                margin-right:15px;
+              }
+              &:nth-last-of-type(2){
+                padding-top:5px;
+                line-height: 20px;
+              }
+              &.btnP{
+                line-height: 25px;
+                height:25px;
+              }
+
+              //旅游
+              &.tour{
+                .radlabel{float:left;margin-right:20px;}
+                .tourInp{
+                  width:90px;
+                }
+              }
+
+
+            }
+            &.active{
+              display: block;
+            }
+          }
+
+        }
+      }
     }
   }
   .app {
