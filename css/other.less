@@ -26,7 +26,7 @@
           width: 130px;
           float: left;
         }
-         h4 {
+        h4 {
           margin-top: 2px;
           margin-left: 144px;
           color: #333;
@@ -66,6 +66,7 @@
 
   }
 }
+
 /*实惠专业户头样式*/
 .bar-hd {
   position: relative;
@@ -74,6 +75,7 @@
   line-height: 48px;
   font-size: 20px;
 }
+
 .bar-hd:before {
   content: '';
   position: absolute;
@@ -87,15 +89,15 @@
   color: #31ba98;
   border-bottom: 1px solid #f4f4f4;
 }
+
 .tbh-afford .afford-hd:before {
   background-repeat: repeat-x;
   background-image: -webkit-linear-gradient(45deg, #b4ec51, #31ba98);
   background-image: -o-linear-gradient(45deg, #b4ec51, #31ba98);
   background-image: linear-gradient(45deg, #b4ec51, #31ba98);
   background: #31ba98;
-  top: 14px\9;
+  top: 14px \9;
 }
-
 
 /*
 nav*/
@@ -160,5 +162,100 @@ nav*/
       }
 
     }
+  }
+}
+
+.banner4 {
+  height: 70px;
+  overflow: hidden;
+  background: url("https://img.alicdn.com/simba/img/TB1nUrYiyOYBuNjSsD4SuvSkFXa.jpg") no-repeat top center;
+}
+
+.fashion-king {
+  .fashion-inner {
+    width: 840px;
+    height: 290px;
+    float: left;
+    background: #fff;
+
+    .fashion-hd {
+      color: #AD45Df;
+      border-bottom: 1px solid #f4f4f4;
+      &.mod-hd {
+        color: #AD45Df;
+        border-bottom: 1px solid #f4f4f4;
+      }
+      &.bar-hd:before {
+        background-repeat: repeat-x;
+        background-image: -webkit-linear-gradient(45deg, #8558d6, #b865e2);
+        background-image: -o-linear-gradient(45deg, #8558d6, #b865e2);
+        background-image: linear-gradient(45deg, #8558d6, #b865e2);
+        background: #8558d6;
+        top: 14px \9;
+      }
+    }
+
+    .list {
+      .item {
+        width: 278px;
+        border: 1px solid transparent;
+        border-right: 1px solid #f4f4f4;
+        border-bottom-color: #fff;
+        float: left;
+        height: 234px;
+        &:last-child {
+          border-right-color: #fff;
+        }
+
+      }
+      .info {
+        padding-left: 20px;
+      }
+      h4 {
+        margin-top: 27px;
+        font-size: 18px;
+        color: #333;
+        line-height: 26px;
+        height: 26px;
+        font-weight: normal;
+      }
+      .subtitle {
+        color: #999;
+        line-height: 22px;
+        height: 22px;
+        overflow: hidden;
+      }
+      .img-wrapper-outer {
+        margin-top: 12px;
+        padding-left: 16px;
+
+        a {
+          float: left;
+          display: inline-block;
+          img {
+            width: 115px;
+            height: 120px;
+            display: block;
+          }
+        }
+        .item-wrapper {
+          margin-left: 2px;
+        }
+        .second {
+          margin-left: 10px;
+        }
+
+      }
+    }
+  }
+
+  .tb-tanx-wrapper {
+    float: right;
+    width: 298px;
+    height: 248px;
+    border: 1px solid #fff;
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
   }
 }

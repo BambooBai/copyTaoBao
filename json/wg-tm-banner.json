@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "img": "img/wanggang/banner/tm01.png",
+    "desc": "tm-banner1",
+    "link": "javascript:;"
+  },
+  {
+    "id": 2,
+    "img": "img/wanggang/banner/tm02.png",
+    "desc": "tm-banner2",
+    "link": "javascript:;"
+  },
+  {
+    "id": 3,
+    "img": "img/wanggang/banner/tm03.png",
+    "desc": "tm-banner3",
+    "link": "javascript:;"
+  },
+  {
+    "id": 4,
+    "img": "img/wanggang/banner/tm04.png",
+    "desc": "tm-banner4",
+    "link": "javascript:;"
+  }
+]

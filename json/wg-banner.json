@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "img": "img/wanggang/banner/banner1.webp",
+    "desc": "banner1",
+    "link": "javascript:;"
+  },
+  {
+    "id": 2,
+    "img": "img/wanggang/banner/banner2.jpg",
+    "desc": "banner2",
+    "link": "javascript:;"
+  },
+  {
+    "id": 3,
+    "img": "img/wanggang/banner/banner3.jpg",
+    "desc": "banner3",
+    "link": "javascript:;"
+  },
+  {
+    "id": 4,
+    "img": "img/wanggang/banner/banner4.webp",
+    "desc": "banner4",
+    "link": "javascript:;"
+  }
+]

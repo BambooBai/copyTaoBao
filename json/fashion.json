@@ -1,0 +1,25 @@
+
+  {
+    "imgSrc": "https://img.alicdn.com/simba/img/TB1tj0ygYZnBKNjSZFhSuw.oXXa.jpg",
+    "list": [
+      {
+        "title": "腔调",
+        "desc": "全球创意设计师平台",
+        "pic1": "//img.alicdn.com/imgextra/i4/129/TB2wR1mf6oIL1JjSZFyXXbFBpXa_!!129-2-luban.png_240x240q90.jpg_.webp",
+        "pic2": "//img.alicdn.com/imgextra/i2/165/TB2e0x7X138SeJjSZFPXXc_vFXa_!!165-2-luban.png_240x240q90.jpg_.webp"
+      },{
+
+        "title": "全球购",
+        "desc": "探索全球美好生活",
+        "pic1": "//img.alicdn.com/i3/TB2gpgScInI8KJjSspeXXcwIpXa_!!66-2-luban.png_240x240q90.jpg_.webp",
+        "pic2": "//img.alicdn.com/imgextra/i2/190/TB2oU0EXaagSKJjy0FaXXb0dpXa_!!190-2-luban.png_240x240q90.jpg_.webp"
+      },
+      {
+
+        "title": "魅力惠",
+        "desc": "奢品好物立即购",
+        "pic1": "//img.alicdn.com/imgextra/i1/113/TB2aHnNdrsTMeJjy1zcXXXAgXXa_!!113-2-luban.png_240x240q90.jpg_.webp",
+        "pic2": "//img.alicdn.com/imgextra/i4/37/TB2vUd6cRxRMKJjy0FdXXaifFXa_!!37-2-luban.png_240x240q90.jpg_.webp"
+      }
+    ]
+  }
