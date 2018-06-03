@@ -28,7 +28,7 @@ let tmallBannerRender = (function () {
   // bind HTML
   let bindHTML = function (data) {
     let strSlide = ``;
-    let strFocus = ``;
+    //let strFocus = ``;
 
     data.forEach((item, index) => {
       let {img, desc} = item;
@@ -37,13 +37,13 @@ let tmallBannerRender = (function () {
         <img src="${img}" alt="${desc}">
       </div>
       `;
-      strFocus += `<li class="${index === 0 ? 'active' : ''}"></li>`;
+      //strFocus += `<li class="${index === 0 ? 'active' : ''}"></li>`;
 
       wrapper.innerHTML = strSlide;
-      focus.innerHTML = strFocus;
+      //focus.innerHTML = strFocus;
 
       slideList = wrapper.querySelectorAll(".bn-slide");
-      focusList = focus.querySelectorAll("li");
+      //focusList = focus.querySelectorAll("li");
 
       // console.log(wrapper);
 
@@ -79,9 +79,9 @@ let tmallBannerRender = (function () {
     tempIndex === slideList.length - 1 ? tempIndex = 0 : null;
     // handle number label
     tmSlideNum.innerHTML = tempIndex + 1;
-    [].forEach.call(focusList, (item, index) => {
-      item.className = index === tempIndex ? "active" : "";
-    });
+    //[].forEach.call(focusList, (item, index) => {
+    //  item.className = index === tempIndex ? "active" : "";
+    //});
   };
 
   // handle container
