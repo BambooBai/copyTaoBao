@@ -26,7 +26,6 @@
             }
             .area-right{
               display: inline-block;
-              transform:rotate(90deg);
             }
             .detailArea{
               border: 1px solid #EEEEEE;
@@ -105,10 +104,8 @@
                 color: @header2;
               }
             }
-
             .myRight{
               display: inline-block;
-              transform: rotate(90deg);
             }
             .detailMy{
               padding: 5px 0;
@@ -157,7 +154,6 @@
             }
             .shoppingCarRight{
               display: inline-block;
-              transform: rotate(90deg);
             }
           }
           .collect{
@@ -185,7 +181,6 @@
             }
             .collect-right{
               display: inline-block;
-              transform: rotate(90deg);
             }
             .detailCollect{
               display: none;
@@ -236,7 +231,6 @@
             }
             .sellerRight{
               display: inline-block;
-              transform: rotate(90deg);
             }
             &:hover .sellerA{
               color:@header2;
@@ -278,7 +272,6 @@
             }
             .customRight{
               display: inline-block;
-              transform: rotate(90deg);
             }
             &:hover .customA{
               color: @header2;
@@ -328,7 +321,6 @@
             }
             .navigationRight{
               display: inline-block;
-              transform: rotate(90deg);
             }
             .detailNavigation{
               display: none;
@@ -575,10 +567,13 @@
                 cursor: pointer;
               }
               .nth-btn-one{
-                background: linear-gradient(to right, #ff8a00 , @header2); /* 标准的语法 */
-                color: white;
-                font-weight: bold;
-                border-radius: 5px 5px 0 0  ;
+
+                &:hover{
+                  background: linear-gradient(to right, #ff8a00 , @header2); /* 标准的语法 */
+                  color: white;
+                  font-weight: bold;
+                  border-radius: 5px 5px 0 0  ;
+                }
               }
               .nth-btn-two{
                 &:hover{
@@ -599,8 +594,48 @@
             }
           }
           .searchBox{
+            width: 630px;
+            height: 40px;
+            position: relative;
             .searchContent{
-
+              position: relative;
+              box-sizing: border-box;
+              width: 556px;
+              height: 40px;
+              border-top: 2px solid @header2;
+              border-bottom: 2px solid @header2;
+              border-left: 2px solid @header2;
+              border-radius: 20px 0 0 20px;
+              background: white;
+              #q{
+                width: 472px;
+                height: 24px;
+                padding: 6px 0;
+                text-indent: 10px;
+                line-height: 24px;
+                border: none;
+                outline: 0;
+                background: none;
+              }
+              img{
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 45px;
+              }
+            }
+            .searchButton{
+              position: absolute;
+              right: 0;
+              width: 74px;
+              height: 40px;
+              background: #FF4200;
+              font-size: 18px;
+              font-weight: 800;
+              color: white;
+              cursor: pointer;
+              border: none;
+              border-radius: 0 20px 20px 0;
             }
           }
         }
