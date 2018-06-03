@@ -13,7 +13,7 @@ let tmallBannerRender = (function () {
   let queryData = function () {
     return new Promise((resolve, reject) => {
       let xhr = new XMLHttpRequest();
-      xhr.open("GET", "../json/wg-tm-banner.json");
+      xhr.open("GET", "./json/wg-tm-banner.json");
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
           let data = JSON.parse(xhr.responseText);

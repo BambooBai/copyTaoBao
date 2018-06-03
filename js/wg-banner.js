@@ -12,7 +12,7 @@ let bannerRender = (function () {
   let queryData = function () {
     return new Promise((resolve, reject) => {
       let xhr = new XMLHttpRequest();
-      xhr.open("GET", "../json/wg-banner.json");
+      xhr.open("GET", "./json/wg-banner.json");
       xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
           let data = JSON.parse(xhr.responseText);
