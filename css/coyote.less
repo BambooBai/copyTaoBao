@@ -33,6 +33,10 @@ body {
   float: left;
 }
 
+.fr {
+  float: right;
+}
+
 .block {
   display: block
 }
@@ -234,7 +238,7 @@ body {
             display: inline-block;
           }
         }
-        &.active a{
+        &.active a {
           color: @header2;
         }
       }
@@ -278,32 +282,32 @@ body {
             height: 26px;
             line-height: 26px;
 
-            &:hover, &.active{
+            &:hover, &.active {
               color: @header2;
             }
 
           }
         }
         .typeCon {
-          width:600%;
+          width: 600%;
           animation: .2s;
           .inpcon {
             position: relative;
             padding-top: 6px;
-            float:left;
-            width:290px;
+            float: left;
+            width: 290px;
             display: none;
             p {
               position: relative;
-              .normalinp,.smallinp,.tourInp {
+              .normalinp, .smallinp, .tourInp {
                 border: 1px solid #dedede;
                 height: 20px;
                 line-height: 20px;
                 width: 200px;
                 padding: 0 5px;
               }
-              .smallinp{
-                width:94px;
+              .smallinp {
+                width: 94px;
               }
               .normalico {
                 position: absolute;
@@ -311,33 +315,35 @@ body {
               }
               .redact {
                 font-weight: bold;
-                color:@header2;
+                color: @header2;
               }
-              .actBtn{
-                padding:0 10px;
-                border:0;
-                margin-right:15px;
+              .actBtn {
+                padding: 0 10px;
+                border: 0;
+                margin-right: 15px;
               }
-              &:nth-last-of-type(2){
-                padding-top:5px;
+              &:nth-last-of-type(2) {
+                padding-top: 5px;
                 line-height: 20px;
               }
-              &.btnP{
+              &.btnP {
                 line-height: 25px;
-                height:25px;
+                height: 25px;
               }
 
               //旅游
-              &.tour{
-                .radlabel{float:left;margin-right:20px;}
-                .tourInp{
-                  width:90px;
+              &.tour {
+                .radlabel {
+                  float: left;
+                  margin-right: 20px;
+                }
+                .tourInp {
+                  width: 90px;
                 }
               }
 
-
             }
-            &.active{
+            &.active {
               display: block;
             }
           }
@@ -431,3 +437,109 @@ body {
     }
   }
 }
+
+// 猜你喜欢
+.container main .guessLove {
+  background: #fff;
+  .guessTit {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 35px;
+    color: @orange;
+    position:relative;
+    em{
+      font-style: normal;
+      width:4px;
+      background:@orange;
+      height:16px;
+      position:absolute;
+      left:20px;
+      top:18px;
+    }
+  }
+  .guessLoveList {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 20%;
+      position:relative;
+      .listcon {
+        height: 310px;
+        padding: 20px 20px 0;
+        border:1px solid #f4f4f4;
+        border-left:0;
+        border-bottom:0;
+        &:nth-child(5n){
+          border-right:0;
+        }
+        img {
+          display: block;
+          height: 195px;
+          width: 100%;
+        }
+        p.des {
+          height: 44px;
+          line-height: 22px;
+          margin-top: 7px;
+          font-size: 14px;
+          color: #666;
+          overflow: hidden;
+        }
+        .info {
+          font-size: 12px;
+          line-height: 24px;
+          padding-top: 3px;
+          .guestPrice {
+            color: @orange;
+
+            em {
+              font-style: normal;
+            }
+          }
+          .guessSale {
+            color: #999;
+          }
+        }
+      }
+      .gueswrap{
+        display: none;
+        position:absolute;
+        width:100%;
+        height:100%;
+        box-sizing: border-box;
+        left:0;
+        top:0;
+        padding-top:250px;
+        text-align:center;
+        color:#fff;
+        .orgcol{
+          background:@header2;
+          padding-top:15px;
+          color:#fff;
+          height:66px;
+          span{
+            width:120px;
+            margin:0 auto;
+            &.ftguebig{
+              font-size: 16px;
+              line-height: 32px;
+              opacity: 0.8;
+              border-bottom:1px solid rgba(255,255,255,.8);
+            }
+            &.ftguesma{
+              line-height: 22px;
+              font-size: 12px;
+            }
+          }
+
+        }
+      }
+      &:hover .gueswrap{
+        display: block;
+        border:1px solid @header2;
+      }
+    }
+  }
+}
+

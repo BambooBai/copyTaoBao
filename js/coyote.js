@@ -230,3 +230,41 @@ let feature = (() => {
 notice.init();
 app.init();
 feature.init();
+//猜你喜欢
+let guessRender = (function(){
+    let guessLoveList = document.querySelector(".guessLoveList");
+    let str = `<li>
+                    <div class="listcon">
+                        <img src="//img.alicdn.com/bao/uploaded/i1/2297988449/TB2X8yPeACWBuNjy0FaXXXUlXXa_!!2297988449.jpg_400x400q90.jpg_.webp" alt="">
+                        <p class="des">文鞥关键是流量费监考老师睡觉奥分开来的是家乐福</p>
+                        <p class="clearfix info">
+                            <span class="guestPrice fl"><em>￥</em>119</span>
+                            <span class="guessSale fr">销量：3</span>
+                        </p>
+                    </div>
+                    <a href="###" class="gueswrap">
+                        <span class="block orgcol">
+                            <span class="block ftguebig">
+                                <em class="iconfont icon-huidaodingbu"></em>
+                                找相似
+                            </span>
+                            <span class="block ftguesma">
+                                发现更多相似宝贝
+                                <em class="iconfont icon-huidaodingbu"></em>
+                            </span>
+                        </span>
+                    </a>
+                </li>`,
+        str1 = ``;
+    console.log(guessLoveList);
+    return {
+        init:function(){
+            for(let i = 0; i < 18*5; i++){
+                str1 += str;
+            }
+            guessLoveList.innerHTML = str1;
+        }
+    }
+})();
+guessRender.init();
+
