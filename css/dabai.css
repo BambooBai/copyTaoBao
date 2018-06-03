@@ -44,7 +44,8 @@
 /*主题右边*/
 #dabai .divR{
     float: left;
-    /*display: none;*/
+
+    display: none;
     transform: translateZ(0);
     display: none;
     position: absolute;
@@ -105,10 +106,8 @@
     right: -10px;
     top: 0;
 }
-#dabai .divR .divR_ .divR_smillClass em:hover::after{
-    color: #FF5000;
-}
-#dabai .divR .divR_ .divR_smillClass em:hover a{
+
+#dabai .divR .divR_ .divR_smillClass em:hover  a,#dabai .divR .divR_ .divR_smillClass em:hover::after{
     color: #FF5000;
 }
 #dabai .divR .divR_ .divR_smillClass span{
@@ -123,6 +122,8 @@
     color: #666;
     display: inline-block;
     margin-right: 12px;
+
+    transition: .3s;
     white-space: nowrap
 }
 #dabai .divR .divR_ .divR_smillClass span a:hover{
@@ -156,6 +157,10 @@
     display: block;
     width: 98px;
     height: 97px;
+    opacity: 0.9;
+}
+#dabai .divR .divR_  .divR_item .whatLikeBox .whatLike img:hover{
+    opacity: 1;
 }
 #dabai .divR .divR_  .divR_item .whatLikeBox .whatLike p{
     height: 26px;

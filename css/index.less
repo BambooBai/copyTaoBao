@@ -1,18 +1,14 @@
 @import "reset.less";
 @import '_common';
-
 body, html {
-  background: #fff;
+  background: #f4f4f4;
   font-size: 14px;
-  color: #3C3C3C;
+  color: @color1;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 .container {
-  width: 1200px;
-  margin: 0 auto;
   header {
-    background: lightseagreen;
     .header-top {
       width: 100%;
       height: 35px;
@@ -29,33 +25,86 @@ body, html {
     height: 30px;
     line-height: 30px;
     color: #fff;
-    background: lightgoldenrodyellow;
+    background-image: -webkit-linear-gradient(left,#ff9000 0,#ff5000 100%);
+    background-image: -o-linear-gradient(left,#ff9000 0,#ff5000 100%);
+    background-image: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+    background-repeat: repeat-x;
   }
   main {
+    width: 1200px;
+    margin: 0 auto;
     .banner-wrap {
       width: 100%;
       height: 632px;
-      background: lightblue;
+      .banner-left {
+        float: left;
+        width: 900px;
+        height: 100%;
+        clear: left;
+        .inner {
+            overflow: hidden;
+          
+          .banner-servise {
+            position: relative;
+            float: left;
+            height: 522px;
+            width: 190px;
+            background: lightgreen;
+            }
+          .banner {
+            margin-left: 10px;
+            margin-top: 10px;
+            float: left;
+            height: 512px;
+            width: 520px;
+            background: lightblue;
+          }
+          .banner-pub {
+            float: right;
+            width: 160px;
+            height: 512px;
+            margin-right: 10px;
+            margin-top: 10px;
+            background: lightgray;
+          }
+        }
+        .headline {
+          position: relative;
+          padding: 14px 14px 12px 20px;
+          height: 73px;
+          margin-top: 10px;
+          background: #fff;
+      }
+      }
+      .banner-right {
+        float: right;
+        width: 290px;
+        height: 100%;
+        margin-top: 10px;
+        background: blue;
+      }
     }
     .lifeStyle {
       margin-top: 10px;
       height: 166px;
       overflow: hidden;
-      background: lightcoral;
+      background: #fff;
     }
     .common-box {
       margin-top: 10px;
       overflow: hidden;
+      margin-bottom: 10px;
       .common-left {
         &.goods {
-          width: 595px;
+          position: relative;
+          width: 590px;
           float: left;
           height: 658px;
-          background: lightpink;
+          //background: lightpink;
         }
         &.good-shop {
           float: left;
-          width: 595px;
+          width: 590px;
           height: 538px;
           background: lightpink;
         }
@@ -67,7 +116,7 @@ body, html {
           width: 595px;
           margin-left: 10px;
           height: 658px;
-          background: #999;
+          //background: #999;
         }
         &.live {
           float: left;
@@ -83,12 +132,11 @@ body, html {
       width: 100%;
       height: 264px;
       overflow: hidden;
-      background: lightsteelblue;
+      background: #fff;
     }
     .ad-banner {
       margin-top: 10px;
       height: 70px;
-      background: lightseagreen;
     }
     .common-box {
       .fashion-king {
@@ -115,3 +163,10 @@ body, html {
     background: lightsteelblue;
   }
 }
+
+
+@import 'fixedtool';
+@import 'wanggang';
+@import 'coyote';
+@import "dabai.css";
+@import "other";
