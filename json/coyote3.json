@@ -1,12 +1,12 @@
 [
-  {"id":0,"appName":"手机app - 淘宝","img":"/copyTaobao/img/app/coyote1.webp","appQR":"https://img.alicdn.com/tps/i4/TB1ULEoIXXXXXbXXXXXCBLiJXXX-83-83.jpg_80x80.jpg","QRalt":"使用手机扫描淘宝的二维码","descQR":"扫一扫淘宝"},
-  {"id":1,"appName":"手机app - 天猫","img":"/copyTaobao/img/app/coyote2.webp","appQR":"https://img.alicdn.com/tps/i3/TB1vI9cIpXXXXamXpXXgCfiJXXX-83-83.png_80x80.jpg","QRalt":"使用手机扫描天猫的二维码","descQR":"扫一扫天猫"},
-  {"id":2,"appName":"手机app - 聚划算","img":"/copyTaobao/img/app/coyote3.webp","appQR":"https://img.alicdn.com/tps/i2/TB15b5bIpXXXXa4XpXX07tlTXXX-200-200.png_80x80.jpg","QRalt":"使用手机扫描聚划算的二维码","descQR":"扫一扫聚划算"},
-  {"id":3,"appName":"手机app - 支付宝","img":"/copyTaobao/img/app/coyote4.webp","appQR":"https://img.alicdn.com/tps/i1/TB146YmIFXXXXb3XpXX07tlTXXX-200-200.png_80x80.jpg","QRalt":"使用手机扫描支付宝的二维码","descQR":"扫一扫支付宝"},
-  {"id":4,"appName":"手机app - 旺旺","img":"/copyTaobao/img/app/coyote5.webp","appQR":"https://img.alicdn.com/tps/i1/TB1Za1EIpXXXXaLXVXXgCfiJXXX-83-83.png_80x80.jpg","QRalt":"使用手机扫描旺旺的二维码","descQR":"扫一扫旺旺"},
-  {"id":5,"appName":"手机app - 虾米","img":"/copyTaobao/img/app/coyote6.webp","appQR":"https://img.alicdn.com/tps/TB12UmWPFXXXXcDXVXXXXXXXXXX-80-80.png_80x80.jpg","QRalt":"使用手机扫描虾米的二维码","descQR":"扫一扫虾米"},
-  {"id":6,"appName":"手机app - 钉钉","img":"/copyTaobao/img/app/coyote7.webp","appQR":"https://gw.alicdn.com/tps/TB1NQcuLVXXXXbhXFXXXXXXXXXX-185-185.png_80x80.jpg","QRalt":"使用手机扫描钉钉的二维码","descQR":"扫一扫钉钉"},
-  {"id":7,"appName":"手机app - 土豆","img":"/copyTaobao/img/app/coyote8.webp","appQR":"https://gw.alicdn.com/tps/TB1pJhALpXXXXbUaXXXXXXXXXXX-200-200.png_80x80.jpg","QRalt":"使用手机扫描土豆的二维码","descQR":"扫一扫土豆"},
-  {"id":8,"appName":"手机app - 蚂蚁财富","img":"/copyTaobao/img/app/coyote9.webp","appQR":"https://gw.alicdn.com/tps/TB1A54QLpXXXXarXFXXXXXXXXXX-140-140.png_80x80.jpg","QRalt":"使用手机扫描蚂蚁财富的二维码","descQR":"扫一扫蚂蚁财富"},
-  {"id":9,"appName":"手机app - 钱盾","img":"/copyTaobao/img/app/coyote10.webp","appQR":"https://img.alicdn.com/tps/i3/TB1gzD9IpXXXXbxXpXXNNsd8VXX-83-83.jpeg_80x80.jpg","QRalt":"使用手机扫描钱盾的二维码","descQR":"扫一扫钱盾"}
+  {"id":0,"appName":"手机app - 淘宝","img":"./img/app/coyote1.webp","appQR":"https://img.alicdn.com/tps/i4/TB1ULEoIXXXXXbXXXXXCBLiJXXX-83-83.jpg_80x80.jpg","QRalt":"使用手机扫描淘宝的二维码","descQR":"扫一扫淘宝"},
+  {"id":1,"appName":"手机app - 天猫","img":"./img/app/coyote2.webp","appQR":"https://img.alicdn.com/tps/i3/TB1vI9cIpXXXXamXpXXgCfiJXXX-83-83.png_80x80.jpg","QRalt":"使用手机扫描天猫的二维码","descQR":"扫一扫天猫"},
+  {"id":2,"appName":"手机app - 聚划算","img":"./img/app/coyote3.webp","appQR":"https://img.alicdn.com/tps/i2/TB15b5bIpXXXXa4XpXX07tlTXXX-200-200.png_80x80.jpg","QRalt":"使用手机扫描聚划算的二维码","descQR":"扫一扫聚划算"},
+  {"id":3,"appName":"手机app - 支付宝","img":"./img/app/coyote4.webp","appQR":"https://img.alicdn.com/tps/i1/TB146YmIFXXXXb3XpXX07tlTXXX-200-200.png_80x80.jpg","QRalt":"使用手机扫描支付宝的二维码","descQR":"扫一扫支付宝"},
+  {"id":4,"appName":"手机app - 旺旺","img":"./img/app/coyote5.webp","appQR":"https://img.alicdn.com/tps/i1/TB1Za1EIpXXXXaLXVXXgCfiJXXX-83-83.png_80x80.jpg","QRalt":"使用手机扫描旺旺的二维码","descQR":"扫一扫旺旺"},
+  {"id":5,"appName":"手机app - 虾米","img":"./img/app/coyote6.webp","appQR":"https://img.alicdn.com/tps/TB12UmWPFXXXXcDXVXXXXXXXXXX-80-80.png_80x80.jpg","QRalt":"使用手机扫描虾米的二维码","descQR":"扫一扫虾米"},
+  {"id":6,"appName":"手机app - 钉钉","img":"./img/app/coyote7.webp","appQR":"https://gw.alicdn.com/tps/TB1NQcuLVXXXXbhXFXXXXXXXXXX-185-185.png_80x80.jpg","QRalt":"使用手机扫描钉钉的二维码","descQR":"扫一扫钉钉"},
+  {"id":7,"appName":"手机app - 土豆","img":"./img/app/coyote8.webp","appQR":"https://gw.alicdn.com/tps/TB1pJhALpXXXXbUaXXXXXXXXXXX-200-200.png_80x80.jpg","QRalt":"使用手机扫描土豆的二维码","descQR":"扫一扫土豆"},
+  {"id":8,"appName":"手机app - 蚂蚁财富","img":"./img/app/coyote9.webp","appQR":"https://gw.alicdn.com/tps/TB1A54QLpXXXXarXFXXXXXXXXXX-140-140.png_80x80.jpg","QRalt":"使用手机扫描蚂蚁财富的二维码","descQR":"扫一扫蚂蚁财富"},
+  {"id":9,"appName":"手机app - 钱盾","img":"./img/app/coyote10.webp","appQR":"https://img.alicdn.com/tps/i3/TB1gzD9IpXXXXbxXpXXNNsd8VXX-83-83.jpeg_80x80.jpg","QRalt":"使用手机扫描钱盾的二维码","descQR":"扫一扫钱盾"}
 ]
