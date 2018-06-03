@@ -1,0 +1,173 @@
+
+#dabai{
+    float: left;
+    position: relative;
+    background: #fff;
+}
+/*主题左边*/
+#dabai .divL {
+    width: 188px;
+    height: 512px;
+    border:1px solid #ff5000;
+    border-top: none;
+    padding:5px 0 3px 0;
+    position: relative;
+    float: left;
+}
+#dabai .divL li{
+    height: 32px;
+    line-height: 32px;
+    position: relative;
+    width: 145px;
+    padding:0 19px 0 25px;
+    font-size: 14px;
+    color:#666;
+    font-weight: 400;
+    cursor: pointer;
+    transition:.3s;
+
+}
+#dabai .divL li:after{
+    content:">";
+    font-size: 14px;
+    color: rgb(121, 99, 89);
+    position:absolute;
+    right: 10px;
+    top: 0;
+    color: #ccc;
+
+}
+#dabai .divL li:hover,#dabai .divL li:hover::after{
+    background-color: #ffe4dc;
+    color: #FF5000;
+}
+/*主题右边*/
+#dabai .divR{
+    float: left;
+
+    display: none;
+    transform: translateZ(0);
+    display: none;
+    position: absolute;
+    left: 188px;
+    top: 0;
+    padding: 0 0 0 18px;
+    width: 692px;
+    height: 518px;
+    border: 2px solid #F94A14;
+    box-shadow: 2px 2px 0 #dcdadb;
+    background-color: #FFF;
+    color: #333;
+    font-size: 12px;
+    z-index: 22;
+}
+#dabai .divR  .divR_{
+
+}
+#dabai .divR .divR_ .divR_item{
+    display: none;
+}
+#dabai .divR .divR_ .divR_smillClass{
+    padding-top: 10px;
+    width: 415px;
+    height: 490px;
+    overflow: hidden;
+    padding-right: 12px;
+    padding-left: 10px;
+    float: left;
+}
+#dabai .divR .divR_ .divR_smillClass p{
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    position: relative;
+}
+#dabai .divR .divR_ .divR_smillClass p a{
+    color: #666;
+}
+#dabai .divR .divR_ .divR_smillClass em{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    font-size: 12px;
+    color: #666;
+    font-style: normal;
+    cursor: pointer;
+}
+#dabai .divR .divR_ .divR_smillClass em a{
+    color: #666;
+}
+#dabai .divR .divR_ .divR_smillClass em:after{
+    content:">";
+    font-size: 12px;
+    color: #ccc;
+    position:absolute;
+    right: -10px;
+    top: 0;
+}
+
+#dabai .divR .divR_ .divR_smillClass em:hover  a,#dabai .divR .divR_ .divR_smillClass em:hover::after{
+    color: #FF5000;
+}
+#dabai .divR .divR_ .divR_smillClass span{
+    display: block;
+    height: 104px;
+    overflow: hidden;
+    padding-bottom: 33px;
+    line-height: 26px;
+
+}
+#dabai .divR .divR_ .divR_smillClass span a{
+    color: #666;
+    display: inline-block;
+    margin-right: 12px;
+
+    transition: .3s;
+    white-space: nowrap
+}
+#dabai .divR .divR_ .divR_smillClass span a:hover{
+    color: #FF5000;
+}
+/*主题右边-猜你喜欢*/
+#dabai .divR .divR_  .divR_item .whatLikeBox {
+    float: left;
+    width: 253px;
+    border-left: 1px solid #f4f4f4;
+    position: relative;
+    height: 498px;
+    padding-top: 20px;
+}
+#dabai .divR .divR_  .divR_item .whatLikeBox>  p{
+    line-height: 18px;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+#dabai .divR .divR_  .divR_item .whatLikeBox .whatLike  a{
+    display: block;
+    width: 97px;
+    height: 143px;
+    padding: 10px 0 0 20px;
+    overflow: hidden;
+    float: left;
+}
+#dabai .divR .divR_  .divR_item .whatLikeBox .whatLike img{
+    display: block;
+    width: 98px;
+    height: 97px;
+    opacity: 0.9;
+}
+#dabai .divR .divR_  .divR_item .whatLikeBox .whatLike img:hover{
+    opacity: 1;
+}
+#dabai .divR .divR_  .divR_item .whatLikeBox .whatLike p{
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    overflow: hidden;
+    font-weight: 400;
+    color: #999;
+    text-align: center;
+}

@@ -1,0 +1,239 @@
+@import (reference) "_common";
+
+// 生活研究所
+.lifeStyle {
+  .belt-inner {
+    background-color: #fff;
+
+    .belt-hd {
+      height: 24px;
+      margin-top: 19px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+
+      a {
+        float: left;
+        display: inline-block;
+        height: 24px;
+
+        img {
+          height: 24px;
+          margin-right: 5px;
+        }
+      }
+
+      p {
+        height: 24px;
+        line-height: 24px;
+        color: #999;
+        font-weight: 400;
+
+        span {
+          margin-left: 6px;
+        }
+      }
+    }
+
+    .belt-list {
+      padding-left: 20px;
+
+      li {
+        position: relative;
+        float: left;
+        height: 82px;
+        width: 194px;
+        display: list-item;
+        text-align: -webkit-match-parent;
+
+        a {
+          display: block;
+
+          .wrap-img {
+            float: left;
+            width: 66px;
+            height: 66px;
+            border: 1px solid @green;
+            border-radius: 100%;
+            background-clip: padding-box; /*不知道是干啥的*/
+            transform: scale(1); /*不知道是干啥的*/
+            padding: 7px;
+            overflow: hidden;
+
+            img {
+              display: block;
+              width: 66px;
+              height: 66px;
+              transition: all .2s; /*不知道是干啥的*/
+            }
+          }
+
+          &:hover {
+            .wrap-img {
+              border: 1px solid #f40;
+            }
+
+            .right h4 {
+              color: #f40;
+            }
+          }
+
+          .right {
+            margin-left: 91px;
+
+            h4 {
+              height: 24px;
+              overflow: hidden;
+              margin-top: 6px;
+              font-size: 16px;
+              font-weight: 500;
+              color: #333;
+            }
+
+            p {
+              overflow: hidden;
+              height: 22px;
+              line-height: 22px;
+              font-size: 14px;
+              color: #999;
+            }
+
+            .extra {
+              overflow: hidden;
+              height: 30px;
+              line-height: 30px;
+              font-size: 12px;
+              color: #999;
+
+              i {
+                color: @green;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.common-box {
+  // 有好货
+  .goods, .shopping {
+    background-color: #fff;
+
+    .goods-inner {
+
+      .goods-hd {
+        position: relative;
+        padding-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        img {
+          float: left;
+          display: inline;
+          height: 24px;
+          margin-right: 5px;
+        }
+
+        p {
+          height: 24px;
+          line-height: 24px;
+          font-weight: 400;
+          color: #999;
+
+          .qr-wrap {
+            .qr {
+              height: 20px;
+              line-height: 24px;
+            }
+          }
+
+        }
+
+        .switch-wrap {
+          position: absolute;
+          top: 0;
+          right: 20px;
+
+          .switch {
+            height: 24px;
+            line-height: 24px;
+            font-size: 12px;
+            color: #999;
+            font-weight: 400;
+            cursor: pointer;
+          }
+        }
+      }
+
+      ul {
+
+        padding-left: 21px;
+
+        .goods-li {
+          float: left;
+          margin: 0 4px 17px 0;
+          overflow: hidden;
+          width: 180px;
+
+          a {
+            display: block;
+            color: #3c3c3c;
+
+            .img-wrap {
+              overflow: hidden;
+              background-color: #4f4f4f;
+
+              img {
+                display: block;
+                height: 180px;
+                width: 100%;
+                opacity: 0.9;
+                background-color: #fff;
+              }
+            }
+
+            .info {
+              overflow: hidden;
+              padding: 0 4px 0 6px;
+
+              h4 {
+                margin-top: 5px;
+                font-size: 16px;
+                height: 28px;
+                line-height: 28px;
+                font-weight: normal;
+                overflow: hidden;
+              }
+
+              p {
+                height: 24px;
+                line-height: 24px;
+                overflow: hidden;
+                color: #999;
+                font-size: 14px;
+              }
+
+              .extra {
+                height: 22px;
+                line-height: 22px;
+                margin-top: 12px;
+                color: #35b1ff;
+                overflow: hidden;
+
+                span {
+                  margin-right: 4px;
+                }
+              }
+            }
+          }
+
+          a:hover .info h4 {
+            color: #f40;
+          }
+        }
+      }
+    }
+  }
+}
