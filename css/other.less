@@ -1,0 +1,164 @@
+.main {
+  .banner-wrap {
+    .headline {
+      h3 {
+        width: 180px;
+        height: 73px;
+        float: left;
+        background: url('https://img.alicdn.com/tfs/TB1x3nNX6uhSKJjSspmXXcQDpXa-258-52.png') 0 14px no-repeat;
+        background-size: 80%;
+        p {
+          padding-top: 42px;
+          line-height: 24px;
+          height: 24px;
+          color: #999;
+          font-weight: 400;
+        }
+      }
+      .right {
+        width: 676px;
+        height: 73px;
+        margin-left: 180px;
+        overflow: hidden;
+        img {
+          height: 73px;
+          overflow: hidden;
+          width: 130px;
+          float: left;
+        }
+         h4 {
+          margin-top: 2px;
+          margin-left: 144px;
+          color: #333;
+          height: 28px;
+          overflow: hidden;
+          display: block;
+          line-height: 28px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        p {
+          margin-left: 144px;
+          color: #999;
+          height: 36px;
+          overflow: hidden;
+          line-height: 18px;
+          font-size: 14px;
+        }
+      }
+      .more {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        z-index: 1;
+        background: #fff;
+        color: #999;
+        width: 40px;
+        text-align: right;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+  }
+}
+/*实惠专业户头样式*/
+.bar-hd {
+  position: relative;
+  padding-left: 32px;
+  margin-top: 5px;
+  line-height: 48px;
+  font-size: 20px;
+}
+.bar-hd:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 16px;
+  top: 16px;
+  left: 20px;
+}
+
+.tbh-afford .afford-hd {
+  color: #31ba98;
+  border-bottom: 1px solid #f4f4f4;
+}
+.tbh-afford .afford-hd:before {
+  background-repeat: repeat-x;
+  background-image: -webkit-linear-gradient(45deg, #b4ec51, #31ba98);
+  background-image: -o-linear-gradient(45deg, #b4ec51, #31ba98);
+  background-image: linear-gradient(45deg, #b4ec51, #31ba98);
+  background: #31ba98;
+  top: 14px\9;
+}
+
+
+/*
+nav*/
+
+.nav {
+
+  .box {
+    width: 1200px;
+    margin: 0 auto;
+    h2 {
+      float: left;
+      width: 190px;
+      text-align: center;
+      font-size: 16px;
+      background: #ff5000;
+    }
+    ul {
+      position: relative;
+      z-index: 5;
+      li {
+        position: relative;
+        float: left;
+        a {
+          float: left;
+          padding: 0 5px;
+          font-weight: 700;
+          color: #fff;
+        }
+
+        &:hover:before {
+          content: '';
+          position: absolute;
+          width: 45px;
+          height: 27px;
+          top: -13px;
+          left: 50%;
+          z-index: 1;
+          margin-left: -22.5px;
+          background-image: url(//img.alicdn.com/tfs/TB1gf5nsL1TBuNjy0FjXXajyXXa-45-13.png);
+          background-repeat: no-repeat;
+          background-size: contain
+        }
+      }
+      &.nav-hd {
+        float: left;
+        font-size: 16px;
+        font-weight: 700;
+        li {
+          margin: 0 3px;
+          text-align: center;
+          padding: 0 4px;
+          cursor: pointer;
+        }
+      }
+
+      &.nav-bd {
+        float: left;
+        font-size: 14px;
+        li {
+          margin-left: 7px;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,150 @@
+@import "../font/iconfont.css";
+
+.fixedtool {
+  position: fixed;
+  top: 50%;
+  display: block;
+  z-index: 4;
+  right: 6px;
+  width: 50px;
+  text-align: center;
+  transition: .2s;
+
+  .iconfont {
+    &.icon-wangwang {
+      position: absolute;
+      height: 36px;
+      width: 50px;
+      line-height: 36px;
+      text-align: center;
+      font-size: 32px;
+      color: #ff7f13;
+      top: -18px;
+      right: 0;
+      z-index: 0;
+    }
+  }
+}
+
+.fixedtool {
+  a {
+    display: block;
+    position: relative;
+    padding: 6px 8px 0;
+    height: 44px;
+    line-height: 40px;
+    font-size: 14px;
+    background: #fff;
+    transition: .1s;
+
+    i {
+      font-style: normal;
+      font-size: 14px;
+      display: block;
+      line-height: 40px
+    }
+
+    .iconfont {
+      &.icon-huidaodingbu {
+        color: #999;
+        position: relative;
+        line-height: 20px;
+      }
+    }
+
+    &:focus {
+      outline: 0
+    }
+    &.active, &:hover {
+       z-index: 2;
+       text-decoration: none;
+       color: #FFF;
+       font-weight: 700;
+       background-repeat: repeat-x;
+       background-image: -webkit-linear-gradient(135deg, #ff971b, #ff5000);
+       background-image: -o-linear-gradient(135deg, #ff971b, #ff5000);
+       background-image: linear-gradient(135deg, #ff971b, #ff5000);
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff5000', endColorstr='#ffff6f06', GradientType=1)
+     }
+    &:after {
+      content: '';
+      border-bottom: 1px solid #efefef;
+      width: 34px;
+      position: absolute;
+      left: 8px;
+      bottom: -1px;
+      z-index: 1
+    }
+    &:last-child:after {
+      border-bottom: none
+    }
+
+    &.box1 {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background-clip: padding-box
+    }
+    &.box7 i {
+      font-size: 12px
+    }
+
+    &.box8 {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background-clip: padding-box
+    }
+  }
+}
+
+
+
+a.box1, a.box2, a.box3, a.box4, a.box5, a.box6 {
+  line-height: 17px;
+  font-size: 13px
+}
+
+a.box1 {
+  color: #F40;
+  padding-top: 10px;
+  height: 40px
+}
+a.box1.active, a.box1:hover {
+  background-color: #F40
+}
+.box2 {
+  color: #f05
+}
+
+.box3 {
+  color: #8d7afb
+}
+
+.box4 {
+  color: #A8C001
+}
+
+a.box5 {
+  color: #F40
+}
+a.box6 {
+  display: none;
+  transition: .2s;
+}
+a.box6, a.box7, a.box8 {
+  font-size: 12px;
+  color: #3C3C3C;
+}
+
+
+.fixedtool a .icon-huidaodingbu {
+  color: #999;
+  position: relative;
+  line-height: 20px
+}
+.fixedtool a:hover .icon-huidaodingbu {
+  color: #FFF
+}
+
+
+
+
