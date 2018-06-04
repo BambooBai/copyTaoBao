@@ -171,3 +171,407 @@
     color: #999;
     text-align: center;
 }
+/*淘抢购*/
+#dabaiBuying .qiang-inner {
+    height: 264px;
+    overflow: hidden;
+    position: relative;
+}
+#dabaiBuying .com-hd {
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#dabaiBuying .mod-hd em{
+    display: none;
+}
+#dabaiBuying .fl {
+    float: left;
+    display: inline;
+}
+#dabaiBuying  .qiang-inner .qiang-hd .mlogo {
+    height: 22px;
+    margin-right: 5px;
+}
+#dabaiBuying  .mod-hd p{
+    line-height: 24px;
+    height: 24px;
+    color: #999;
+    font-weight: 400;
+}
+#dabaiBuying  .ml6 {
+    margin-left: 6px;
+}
+#dabaiBuying  .countdown-wrapper{
+    color:#ff5000;
+    line-height: 20px;
+    height: 20px;
+    margin-top: 2px;
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+
+}
+#dabaiBuying  .countdown-wrapper span{
+    padding: 2px;
+    background: pink;
+    display: inline-block;
+    line-height: 14px;
+    height: 14px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#dabaiBuying  .mod-hd .tb-fn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    line-height: 24px;
+    height: 24px;
+    font-size: 12px;
+    color: #999;
+    width: 100px;
+    text-align: right;
+}
+#dabaiBuying  .mod-hd .tb-fn .more, .mod-hd .tb-fn .switch {
+    cursor: pointer;
+    font-weight: 400;
+}
+#dabaiBuying  .mod-hd .tb-fn .more {
+    margin-left: 14px;
+    color: inherit;
+}
+#dabaiBuying .mod-hd .more .tb-ifont {
+    float: right;
+    width: 12px;
+    font-size: 12px;
+    text-align: center;
+    top: 1px;
+    position: relative;
+}
+#dabaiBuying .qiang-inner li {
+    float: left;
+    width: 355px;
+    padding: 0 20px 0 20px;
+
+}
+
+#dabaiBuying  .qiang-inner li a {
+    display: block;
+}
+#dabaiBuying  .qiang-inner .img-wrapper {
+    float: left;
+    width: 180px;
+    height: 180px;
+    background: #f4f4f4;
+    opacity: 0.9;
+    transition:.3s;
+}
+#dabaiBuying  .qiang-inner .img-wrapper img {
+    width: 101%;
+    height: 100%;
+    display: block;
+
+}
+#dabaiBuying .qiang-inner li:hover  .img-wrapper{
+    opacity: 1;
+}
+#dabaiBuying   .qiang-inner .info {
+    margin-left: 194px;
+    overflow: hidden;
+}
+#dabaiBuying .qiang-inner h4 {
+    margin-top: 11px;
+    line-height: 22px;
+    height: 44px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    transition: .3s;
+}
+#dabaiBuying .qiang-inner li:hover h4{
+    color: #ff5000;
+}
+#dabaiBuying  .qiang-inner .title {
+    margin-top: 12px;
+    line-height: 28px;
+    color: #999;
+}
+#dabaiBuying  .qiang-inner .progress {
+    position: relative;
+    width: 159px;
+    height: 6px;
+    -webkit-border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 3px;
+    -moz-background-clip: padding;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background: #FFE4Dc;
+    visibility: hidden;
+}
+
+#dabaiBuying  .qiang-inner .progress .progress-bar {
+    position: absolute;
+    width: 25%;
+    left: 0;
+    top: 0;
+    height: 6px;
+    -webkit-border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 3px;
+    -moz-background-clip: padding;
+    border-radius: 3px;
+    background-clip: padding-box;
+    background: #FE3338;
+}
+#dabaiBuying  .qiang-inner .desc {
+    visibility: hidden;
+    line-height: 28px;
+    height: 28px;
+    color: #FE3338;
+}
+#dabaiBuying  .qiang-inner .desc .letter {
+    float: right;
+    display: inline;
+    width: 100px;
+    text-align: right;
+}
+#dabaiBuying  .qiang-inner .yan {
+    font-size: 12px;
+    color: #ff5000;
+}
+#dabaiBuying  .qiang-inner .yan, .qiang-inner .cur {
+    font-size: 20px;
+    color: #ff5000;
+}
+#dabaiBuying  .qiang-inner .price {
+    color: #999;
+    margin-left: 6px;
+    text-decoration: line-through;
+}
+
+/*家居品质家*/
+#dabaiLive  .common-left.good-shop{
+    height: 768px;
+    background: #fff;
+}
+#dabaiLive .J_Module {
+    min-height: 0;
+    background-color: #FFF;
+}
+#dabaiLive .quality-hd {
+    color: #28ABFF;
+    border-bottom: 1px solid #f4f4f4;
+    margin-top: 0;
+}
+#dabaiLive .quality-hd:before {
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(45deg, #0087ff, #3bc7ff);
+    background-image: -o-linear-gradient(45deg, #0087ff, #3bc7ff);
+    background-image: linear-gradient(45deg, #0087ff, #3bc7ff);
+    background: #28ABFF;
+    top: 14px\9;
+}
+
+#dabaiLive .bar-hd:before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 16px;
+    top: 16px;
+    left: 20px;
+}
+#dabaiLive .bar-hd em {
+    display: block;
+    font-style: normal;
+}
+#dabaiLive .quality-inner .left {
+    width: 294px;
+    float: left;
+    display: inline;
+}
+#dabaiLive .quality-inner .left .img-wrapper-outer {
+    border: 1px solid transparent;
+    padding: 19px;
+    border-right-color: #f4f4f4;
+    width: 254px;
+    height: 317px;
+
+}
+#dabaiLive  .quality-inner .left .main-img {
+    display: block;
+    height: 317px;
+    width: 254px;
+    overflow: hidden;
+}
+#dabaiLive .quality-inner .left .main-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #fff;
+    opacity: 0.9;
+}
+#dabaiLive .quality-inner .left .item {
+    height: 117px;
+    border-top-color: #f4f4f4;
+    border-right-color: #f4f4f4;
+    display: block;
+}
+#dabaiLive .quality-inner .left .item-hd {
+    padding-top: 35px;
+    float: left;
+    padding-left: 40px;
+    width: 122px;
+    font-size: 14px;
+}
+#dabaiLive .quality-inner .left .item-hd h4 {
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+#dabaiLive .quality-inner .left .item-hd .title {
+    font-size: 18px;
+    color: #333;
+}
+#dabaiLive .quality-inner .left .item-hd .subtitle {
+    color: #999;
+    line-height: 20px;
+    font-size: 12px;
+}
+#dabaiLive .quality-inner .left .item-bd {
+    margin-left: 162px;
+    padding-top: 10px;
+}
+#dabaiLive .quality-inner .left .item-bd a, .quality-inner .left .item-bd img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+#dabaiLive .quality-inner .left .main-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#dabaiLive .quality-inner .right {
+    margin-left: 294px;
+}
+#dabaiLive .quality-inner .right .item {
+    padding: 30px 19px;
+    height: 176px;
+    border-top-color: #f4f4f4;
+    transition: .3s;
+}
+#dabaiLive  .quality-inner .right .item.first {
+    border-top-color: transparent;
+}
+#dabaiLive  .quality-inner .right .item:hover{
+    border:1px solid #ff5000;
+}
+#dabaiLive .quality-inner .item-hd {
+    font-size: 14px;
+}
+#dabaiLive .quality-inner .right .item-hd {
+    font-weight: normal;
+    color: #333;
+    padding-left: 10px;
+    line-height: 32px;
+    height: 32px;
+}
+#dabaiLive .quality-inner .right .item .title {
+    font-size: 18px;
+    color: #333;
+}
+#dabaiLive .quality-inner .right .item-hd .subtitle {
+    color: #999;
+    vertical-align: top;
+    font-size: 12px;
+}
+#dabaiLive .quality-inner .right .item-bd {
+    margin-top: 24px;
+}
+#dabaiLive  .quality-inner .right .item-bd img {
+    display: block;
+}
+
+#dabaiLive  .quality-inner .right .item-bd a,#dabaiLive  .quality-inner .right .item-bd img {
+    width: 120px;
+    height: 120px;
+}
+#dabaiLive  .quality-inner .right .item-bd .second {
+    margin-left: 15px;
+}
+#dabaiLive .fl {
+    float: left;
+    display: inline;
+}
+/*家居右*/
+#dabaiLive  .common-right.live{
+    height: 768px;
+    background: #fff;
+}
+#dabaiLive  .common-right .mod-hd {
+    color: #ff5000;
+}
+#dabaiLive .common-right .mod-hd:before {
+    background-repeat: repeat-x;
+    background-image: -webkit-linear-gradient(45deg, #ffd636, #ff5000);
+    background-image: -o-linear-gradient(45deg, #ffd636, #ff5000);
+    background-image: linear-gradient(45deg, #ffd636, #ff5000);
+    background: #ff5000;
+}
+#dabaiLive .quality-inner .left {
+    width: 294px;
+}
+#dabaiLive   .quality-inner .left .img-wrapper-outer {
+    padding: 19px;
+    border-right-color: #f4f4f4;
+    width: 254px;
+    height: 317px;
+}
+#dabaiLive  .img-wrapper {
+    background: #4f4f4f;
+}
+#dabaiLive  .quality-inner .left .main-img {
+    display: block;
+    height: 317px;
+    width: 254px;
+    overflow: hidden;
+}
+#dabaiLive .img-wrapper img {
+    opacity: .9;
+}
+#dabaiLive .quality-inner .left .main-img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: .3s;
+}
+#dabaiLive .quality-inner .left .main-img img:hover{
+    opacity: 0.8;
+}
+#dabaiLive .quality-inner .img-wrapper-outer, .quality-inner .item {
+    border: 1px solid transparent;
+}
+#dabaiLive .quality-inner .img-wrapper-outer:hover{
+    border: 1px solid #FE3338;
+}
+#dabaiLive .quality-inner .left .item {
+    height: 117px;
+    border-top-color: #f4f4f4;
+    border-right-color: #f4f4f4;
+    display: block;
+    transition: .3s;
+}
+#dabaiLive .quality-inner .left .item:hover{
+    border: 1px solid #FE3338;
+}
+
+
+
+
+
+
