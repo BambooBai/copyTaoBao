@@ -259,7 +259,7 @@ let guessRender = (function(){
     console.log(str1);
     return {
         init:function(){
-            for(let i = 0; i < 6*5; i++){
+            for(let i = 0; i < 4*5; i++){
                 str1 += str;
             }
             guessLoveList.innerHTML = str1;

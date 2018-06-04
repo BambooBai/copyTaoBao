@@ -57,7 +57,6 @@ let imageRender = (function () {
         let dataSrc = [...imgList].filter(item => {
             return Boolean(item.getAttribute('data-large'))
         });
-
     };
     return {
         init: function () {
