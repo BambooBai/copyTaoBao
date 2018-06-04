@@ -44,9 +44,6 @@ let fashionRender = (function () {
 
         listWrap.innerHTML = str1;
         tbWrapper.innerHTML = str2;
-
-        console.log(str1, str2);
-
     };
     return {
         init: function () {

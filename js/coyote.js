@@ -235,7 +235,7 @@ let guessRender = (function(){
     let guessLoveList = document.querySelector(".guessLoveList");
     let str = `<li>
                     <div class="listcon">
-                        <img src="//img.alicdn.com/bao/uploaded/i1/2297988449/TB2X8yPeACWBuNjy0FaXXXUlXXa_!!2297988449.jpg_400x400q90.jpg_.webp" alt="">
+                        <img src="//img.alicdn.com/imgextra/i3/2336690561/TB2ldDOrAKWBuNjy1zjXXcOypXa_!!2336690561-0-beehive-scenes.jpg_180x180xzq90.jpg_.webp" alt="">
                         <p class="des">文鞥关键是流量费监考老师睡觉奥分开来的是家乐福</p>
                         <p class="clearfix info">
                             <span class="guestPrice fl"><em>￥</em>119</span>
@@ -256,10 +256,10 @@ let guessRender = (function(){
                     </a>
                 </li>`,
         str1 = ``;
-    console.log(guessLoveList);
+    console.log(str1);
     return {
         init:function(){
-            for(let i = 0; i < 18*5; i++){
+            for(let i = 0; i < 6*5; i++){
                 str1 += str;
             }
             guessLoveList.innerHTML = str1;
