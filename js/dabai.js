@@ -222,6 +222,7 @@ let dabaiFn=function () {
                     bindHhgData(result);
                 })
             })
+
         }
     }
 }();
